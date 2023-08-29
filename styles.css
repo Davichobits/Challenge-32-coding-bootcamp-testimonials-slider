@@ -1,0 +1,35 @@
+*{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-container{
+  width: 327px;
+  height: 308px;
+  background-image: url(./images/pattern-bg.svg);
+  background-size: contain;
+  text-align: center;
+  padding-top: 30px;
+  margin: auto;
+  position: relative;
+}
+.image{
+  width: 80%;
+}
+.arrow-container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 40px;
+  background-color: white;
+  box-shadow: 1px 1px 10px;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
