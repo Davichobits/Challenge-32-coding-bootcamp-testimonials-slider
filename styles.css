@@ -1,7 +1,21 @@
+:root{
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
 *{
-  border: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body{
+  font-family: 'Inter';
 }
 
 .image-container{
@@ -11,11 +25,12 @@
   background-size: contain;
   text-align: center;
   padding-top: 30px;
-  margin: auto;
+  margin: 24px auto 0;
   position: relative;
 }
 .image{
   width: 80%;
+  border-radius: 4px;
 }
 .arrow-container{
   position: absolute;
@@ -32,4 +47,49 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
+}
+.arrow{
+  cursor: pointer;
+}
+#testimonial-profile{
+  width: 311px;
+  font-size: 1.125rem;
+  margin: 0 auto 19px;
+  line-height: 1.5rem;
+  text-align: center;
+  color: var(--Grayish-Blue);
+  font-weight: 300;
+  
+}
+.testimonial-container{
+  position: relative;
+  margin-top: 37px;
+  padding-top: 25px;
+  & img{
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+#name-profile, #degree-profile{
+  font-size: .9375rem;
+  text-align: center;
+}
+#name-profile{
+  color: var(--Dark-Blue);
+}
+#degree-profile{
+  color: var(--Grayish-Blue);
+}
+footer{
+  background-image: url(./images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 72px;
+  width: 285px;
+  position: absolute;
+  bottom: 0;
 }
