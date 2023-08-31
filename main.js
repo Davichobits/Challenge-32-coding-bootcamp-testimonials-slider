@@ -1,10 +1,10 @@
 const prevBtn = document.querySelector('#prev-btn')
 const nextBtn = document.querySelector('#next-btn')
 
-const imgProfile = document.querySelector('#img-profile');
-const testimonialProfile = document.querySelector('#testimonial-profile');
-const nameProfile = document.querySelector('#name-profile');
-const degreeProfile = document.querySelector('#degree-profile');
+const userImg = document.querySelector('#user-img');
+const userTestimonial = document.querySelector('.user-testimonial');
+const userName = document.querySelector('.user-name');
+const userDegree = document.querySelector('.user-degree');
 
 const students = [
   {
@@ -22,10 +22,10 @@ const students = [
 ]
 
 const updateProfileInfo = (imageIndex) => {
-  imgProfile.setAttribute('src', students[imageIndex].imageUrl)
-  testimonialProfile.textContent = students[imageIndex].testimonial
-  nameProfile.textContent = students[imageIndex].name
-  degreeProfile.textContent = students[imageIndex].degree
+  userImg.setAttribute('src', students[imageIndex].imageUrl)
+  userTestimonial.textContent = students[imageIndex].testimonial
+  userName.textContent = students[imageIndex].name
+  userDegree.textContent = students[imageIndex].degree
 }
 
 let imageIndex = 0;
